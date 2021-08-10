@@ -6,13 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Streams</title>
     <link rel="stylesheet" href="style.css" />
+
+    <script src="production/ovenplayer/ovenplayer.js"></script>
   </head>
   <body>
-    <div className="pageContainer">
-      <div classname="header">
-        <h1>STREAMS</h1>
+    <div class="pageContainer">
+      <div class="header">
+        <h1>STREAMS1</h1>
+      </div>
+      <div class="videoContainer">
+        test
+        <div id="player"></div>
+
+        <!-- STANDARD VIDEO
+        <script>
+          let player = OvenPlayer.create("player", {
+            sources: [
+              {
+                type: "mp4",
+                file: "videos/OCP_480.mp4",
+                label: "480p",
+              },
+            ],
+          });
+          player.on("error", function (error) {
+            console.log(error);
+          });
+        </script> -->
+
+        <!-- WEBRTC VIDEO -->
+        <script>
+          player = OvenPlayer.create("player", {
+            sources: [
+              {
+                file: "ws://34.89.23.64:3333/app/stream",
+                label: null,
+                type: "webrtc",
+              },
+            ],
+          });
+        </script>
       </div>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>

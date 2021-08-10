@@ -17,3 +17,16 @@ body {
 
   font-family: "Ubuntu", sans-serif;
 }
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.videoContainer {
+  width: 70%;
+  background-color: black;
+  color: aliceblue;
+}
