@@ -25,8 +25,31 @@ body {
   align-items: center;
 }
 
-.videoContainer {
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  margin-bottom: 2rem;
+  width: 70%;
+  color: white;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.header {
+}
+
+.description {
+  padding: 1rem;
+  margin-top: 2rem;
   width: 70%;
   background-color: black;
+  color: white;
+}
+
+.videoContainer {
+  width: 70%;
+  background-color: red;
   color: aliceblue;
 }
